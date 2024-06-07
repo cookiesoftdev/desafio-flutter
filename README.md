@@ -45,4 +45,47 @@ desafio_flutter/
    ```sh
    git clone https://github.com/cookiesoftdev/desafio-flutter.git
    cd desafio-flutter
-   
+
+## Bibliotecas Utilizadas
+* cupertino_icons: Ícones estilo Cupertino para iOS.
+* http: Realiza requisições HTTP.
+* provider: Gerenciamento de estado reativo.
+* shared_preferences: Armazenamento de dados simples no dispositivo.
+* audioplayers: Toca arquivos de áudio.
+* get_it: Serviço de localização para injeção de dependências.
+* injectable: Geração de código para injeção de dependências.
+* injectable_generator: Ferramenta de geração de código para o injectable.
+* connectivity_plus: Verificação do estado da conectividade com a internet.
+
+## Dependências de Desenvolvimento
+* flutter_test: Ferramentas para testes unitários e de integração.
+* mockito: Biblioteca para criar mocks em testes.
+* build_runner: Ferramenta para gerar código.
+* flutter_driver: Ferramentas para testes de integração.
+* integration_test: Suporte para testes de integração.
+
+## Estrutura do Código
+
+`main.dart`
+O ponto de entrada do aplicativo. Configura o WordProvider usando ChangeNotifierProvider 
+e define o tema e a tela inicial do aplicativo.
+
+`locator.dart`
+Configura e registra os serviços que serão usados pelo projeto.
+
+`word_provider.dart`
+Gerencia o estado da lista de palavras e favoritos. Notifica os ouvintes sobre as mudanças no estado.
+
+`word.dart`
+Define a classe Word que representa uma palavra, sua fonética e significados.
+
+`word_list_screen.dart`
+Exibe uma lista de palavras em inglês. Usa o WordProvider para obter a lista de palavras e navega 
+para a tela de detalhes da palavra ao tocar em uma palavra.
+
+`word_detail_screen.dart`
+Exibe os detalhes de uma palavra selecionada, incluindo sua fonética e significados. 
+Permite adicionar ou remover a palavra dos favoritos.
+
+`dictionary_api.dart`
+Realiza requisições HTTP para buscar dados de palavras da API Dictionary.
