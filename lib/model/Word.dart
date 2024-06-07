@@ -1,5 +1,5 @@
 /**
- * Modelo definido devido a estrutura da Free Dictionary API
+ * Modelo definido para a estrutura da Free Dictionary API
  */
 class Word {
   final String word;

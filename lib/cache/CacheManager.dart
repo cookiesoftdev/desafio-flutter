@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
 
 /**
- * Classe para tratar questão do cache do aplicativo
+ * Classe para tratar questão do cache do app
  */
 class CacheManager {
   Future<void> cacheWordData(String word, Map<String, dynamic> data) async {
